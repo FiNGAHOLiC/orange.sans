@@ -21,13 +21,14 @@ $color-black:#000;
 $color-corporate:#e56a22;
 
 .snp-font-org-logo{ font-family:'orangeSans-Logo'; font-weight:normal; font-style:normal; }
-.snp-font-org-bold{ font-family:'orangeSans-Bold'; font-weight:normal; font-style:normal; }
-.snp-font-org-medium{ font-family:'orangeSans-Medium'; font-weight:normal; font-style:normal; }
-.snp-font-org-light{ font-family:'orangeSans-Light'; font-weight:normal; font-style:normal; }
+.snp-font-org-bold{ font-family:'orangeSans-Bold'; font-weight:normal; font-style:normal; letter-spacing:.1em; }
+.snp-font-org-medium{ font-family:'orangeSans-Medium'; font-weight:normal; font-style:normal; letter-spacing:.1em; }
+.snp-font-org-light{ font-family:'orangeSans-Light'; font-weight:normal; font-style:normal; letter-spacing:.1em; }
 
 // 1px = 7.7%;
 // http://osdir.com/ml/lang.javascript.yui/2007-12/msg00711.html
 // http://yuilibrary.com/yui/docs/cssfonts/cssfonts-size.html
+
 .snp-font-10{ font-size:77%; }
 .snp-font-12{ font-size:93%; }
 .snp-font-14{ font-size:108%; }
@@ -37,9 +38,7 @@ $color-corporate:#e56a22;
 .snp-font-36{ font-size:277.2%; }
 .snp-font-120{ font-size:924%; }
 
-.snp-clearfix{
-	overflow:hidden; _zoom:1;
-}
+.snp-clearfix{ overflow:hidden; _zoom:1; }
 
 // ==========================
 //
@@ -47,18 +46,11 @@ $color-corporate:#e56a22;
 //
 // ==========================
 
-h1, p, ul, li, dl, dt, dd, section, article, header, footer, small, span{
-	margin:0;
-	padding:0;
-}
+h1, p, ul, li, dl, dt, dd, section, article, header, footer, small, span{ margin:0; padding:0; }
 
-h1{
-	font-weight:normal;
-}
+h1{ font-weight:normal; }
 
-ul{
-	list-style:none;
-}
+ul{ list-style:none; }
 
 a{
 	-webkit-transition:.2s linear;
@@ -78,7 +70,7 @@ a{
 // ==========================
 
 body{
-	font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Meiryo, 'メイリオ', 'ＭＳ Ｐゴシック', Helvetica, Arial, sans-serif;	
+	font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Meiryo, 'メイリオ', 'ＭＳ Ｐゴシック', Helvetica, Arial, sans-serif;
 	line-height:1.6;
 	color:$color-black;
 	text-align:center;
@@ -116,15 +108,9 @@ body{
 	h1{
 		@extend .snp-font-120;
 		line-height:1;
-		.bold{
-			@extend .snp-font-org-bold;
-		}
-		.medium{
-			@extend .snp-font-org-medium;
-		}
-		.light{
-			@extend .snp-font-org-light;
-		}
+		.bold{ @extend .snp-font-org-bold; }
+		.medium{ @extend .snp-font-org-medium; }
+		.light{ @extend .snp-font-org-light; }
 	}
 }
 
@@ -134,47 +120,25 @@ body{
 		@extend .snp-clearfix;
 		@extend .snp-font-14;
 		font-weight:bold;
-		dt{
-			width:6em;
-			float:left;
-		}
-		dd{
-			margin-left:8em;
-		}
+		dt{ width:6em; float:left; }
+		dd{ margin-left:8em; }
 	}
 }
 
-.mod-desc{
-	margin-bottom:60px;
-	@extend .snp-font-14;
-}
+.mod-desc{ margin-bottom:60px; @extend .snp-font-14; }
 
 .mod-fontlist{
 	section{
 		margin-bottom:60px;
-		h1{
-			margin-bottom:14px;
-			@extend .snp-font-18;
-		}
-		p{
-			@extend .snp-font-36;
-		}
-		&#orange-sans-bold{
-			@extend .snp-font-org-bold;
-		}
-		&#orange-sans-medium{
-			@extend .snp-font-org-medium;
-		}
-		&#orange-sans-light{
-			@extend .snp-font-org-light;
-		}
+		h1{ margin-bottom:14px; @extend .snp-font-18; }
+		p{ @extend .snp-font-36; }
+		&#orange-sans-bold{ @extend .snp-font-org-bold; }
+		&#orange-sans-medium{ @extend .snp-font-org-medium; }
+		&#orange-sans-light{ @extend .snp-font-org-light; }
 	}
 }
 
-.mod-attention{
-	margin-bottom:60px;
-	@extend .snp-font-14;
-}
+.mod-attention{ margin-bottom:60px; @extend .snp-font-14; }
 
 .mod-download{
 	margin-bottom:60px;
@@ -182,8 +146,5 @@ body{
 	@extend .snp-font-org-bold;
 }
 
-.mod-copyright{
-	@extend .snp-font-18;
-	@extend .snp-font-org-light;
-}
+.mod-copyright{ @extend .snp-font-18; @extend .snp-font-org-light; }
 
