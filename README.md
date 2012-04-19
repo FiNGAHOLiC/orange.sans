@@ -1,3 +1,4 @@
 # orange sans font
 
-Under development
+有限会社orangeの10周年記念プロジェクトの一つとして、  
+弊社ロゴをベースとしたフォントを作成しました。
